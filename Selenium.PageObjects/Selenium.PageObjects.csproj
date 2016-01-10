@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6C48CBB-4F6A-4FCA-BACA-7BC84B4605E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Scout.Selenium.AreaLibrary</RootNamespace>
+    <AssemblyName>Scout.Selenium.AreaLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\SeleniumDlls\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\SeleniumDlls\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\SeleniumDlls\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\SeleniumDlls\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\SeleniumDlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\SeleniumDlls\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\SeleniumDlls\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.Build">
+      <HintPath>..\SeleniumDlls\RestSharp.Build.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Instance.cs" />
+    <Compile Include="Browsers.cs" />
+    <Compile Include="BasePage.cs" />
+    <Compile Include="DefaultPage.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="StaticHelpers.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Factory.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

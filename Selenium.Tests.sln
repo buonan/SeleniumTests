@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium.Tests", "Selenium.Tests\Selenium.Tests.csproj", "{88A3F2B1-C232-4811-822A-ACD7D1B4E576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium.PageObjects", "Selenium.PageObjects\Selenium.PageObjects.csproj", "{D6C48CBB-4F6A-4FCA-BACA-7BC84B4605E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88A3F2B1-C232-4811-822A-ACD7D1B4E576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A3F2B1-C232-4811-822A-ACD7D1B4E576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A3F2B1-C232-4811-822A-ACD7D1B4E576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A3F2B1-C232-4811-822A-ACD7D1B4E576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C48CBB-4F6A-4FCA-BACA-7BC84B4605E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C48CBB-4F6A-4FCA-BACA-7BC84B4605E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C48CBB-4F6A-4FCA-BACA-7BC84B4605E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C48CBB-4F6A-4FCA-BACA-7BC84B4605E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC08126-5AFA-47CE-84BF-C297278AA4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC08126-5AFA-47CE-84BF-C297278AA4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC08126-5AFA-47CE-84BF-C297278AA4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC08126-5AFA-47CE-84BF-C297278AA4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
